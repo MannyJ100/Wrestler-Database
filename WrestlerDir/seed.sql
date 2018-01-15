@@ -11,4 +11,4 @@ CREATE TABLE wrestlers (
 
 );
 
-INSERT INTO wrestlers (name , height, weight, origin, finisher) VALUES ('Name' , 'Height' , 'Weight', 'Origin', 'Finisher');
+INSERT INTO wrestlers (name, height, weight, origin, finisher) VALUES ('Name', 'Height', 'Weight', 'Origin', 'Finisher');

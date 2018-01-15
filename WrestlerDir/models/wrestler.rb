@@ -7,7 +7,7 @@ class Wrestler
 		conn = Wrestler.open_connection
 
 		if(!self.id)
-			sql = "INSERT INTO wrestlers (name, height, weight, origins, finisher) VALUES ( '#{self.name}', '#{self.height}', '#{self.weight}', #{self.origin}', #{self.finisher}')"
+			sql = "INSERT INTO wrestlers (name, height, weight, origin, finisher) VALUES ( '#{self.name}', '#{self.height}', '#{self.weight}', '#{self.origin}', '#{self.finisher}')"
 		else
 			sql = "UPDATE wrestlers SET name='#{self.name}', height='#{self.height}', weight='#{self.weight}', origin='#{self.origin}', finisher='#{self.finisher}' WHERE id = #{self.id}"
 		end
