@@ -1,0 +1,11 @@
+<h1><%= @wrestler.name %></h1>
+<p><%= @wrestler.height %></p>
+<p><%= @wrestler.weight %></p>
+<p><%= @wrestler.origin %></p>
+<p><%= @wrestler.finisher %></p>
+<a href="/<%= @wrestler.id %>/edit">edit</a>
+
+<form action="/<%= @wrestler.id %>" method="POST">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="Delete">
+</form>

@@ -1,0 +1,9 @@
+
+<h1>Welcome to the Wrestler Alumni Page</h1>
+
+<% @wrestlers.each do |wrestler| %>
+	<div>
+		<h3><a href="/<%= wrestler.id %>"><%= wrestler.name %></a></h3>
+		<p><%= wrestler.finisher %></p>
+	</div>
+<% end %>

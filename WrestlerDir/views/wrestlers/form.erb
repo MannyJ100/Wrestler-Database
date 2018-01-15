@@ -1,0 +1,35 @@
+<form action="/<%= @wrestler.id %>" method="POST">
+	<div>
+		<label>Name</label>
+		<input type="text" name="name" placeholder="Enter a name" value="<%= @wrestler.name %>">
+	</div>
+
+	<div>
+		<label>Height</label>
+		<input type="text" name="height" placeholder="Enter a height in feet" value="<%= @wrestler.height %>">
+	</div>
+
+	<div>
+		<label>Weight</label>
+		<input type="text" name="weight" placeholder="Enter a weight in pounds" value="<%= @wrestler.weight %>">
+	</div>
+
+	<div>
+		<label>Weight</label>
+		<input type="text" name="origin" placeholder="Place of origin" value="<%= @wrestler.origin %>">
+	</div>
+
+	<div>
+		<label>Finisher</label>
+		<input type="text" name="finisher" placeholder="Wrestlers finishing move" value="<%= @wrestler.finisher %>">
+	</div>
+
+	<div>
+		<input type="submit" value="Save Wrestler">
+	</div>
+	<% if(@wrestler.id) %>
+		<input type="hidden" name="_method" value="PUT">
+	<% end %>
+</form>
+
+
