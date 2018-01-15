@@ -20,15 +20,6 @@ class WrestlersController < Sinatra::Base
 
   	end
 
-    # get '/wrestlers/new' do
-
-
-    #   @wrestler = Wrestler.new 
-
-    #   erb :'wrestlers/new'
-
-    # end
-
   	get '/new' do
 
   		@wrestler = Wrestler.new 
